@@ -1,0 +1,255 @@
+body {
+font-family: sans-serif;
+background: #909090;
+}
+
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+background: #06D85F;
+  border: 2px solid #06D85F;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+position: absolute;
+top: 50%;
+right: 45%;
+
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+/*
+.popup4 {
+  margin: 0px auto;
+padding: 20px;
+  width: 96%;
+background: transparent;
+position: absolute;
+top: -10px;
+right: -10px;
+border-radius: 5px 5px 5px 5px;
+}
+
+
+.popup3 {
+  margin: 0px auto;
+padding: 40px;
+  width: 96%;
+background: #00ff00;
+position: absolute;
+top: 10px;
+right: 8px;
+border-radius: 5px 5px 5px 5px;
+}
+
+
+.popup2 {
+  margin: 0px auto;
+padding: 85px;
+  width: 100%;
+background: #fff;
+position: absolute;
+top: 30px;
+right: 0px;
+border-radius: 0px 0px 5px 5px;
+}
+
+.popup {
+  margin: 100px auto;
+  padding: 100px;
+background: linear-gradient(to right, #000000 88%, #FF0000 12%);
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}*/
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: -30px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+
+
+
+
+
+
+
+/*BIPEUR PETIT TAILLE*/
+
+
+.popup4 {
+  margin: 0px auto;
+height: 100px;
+  width: 96%;
+background: transparent;
+position: absolute;
+top: -10px;
+right: -15px;
+border-radius: 5px 5px 5px 5px;
+}
+
+
+.popup3 {
+  margin: 0px auto;
+  height: 100px;
+  width: 90%;
+background: #00ff00;
+position: absolute;
+top: 10px;
+right: 12px;
+border-radius: 5px 5px 5px 5px;
+}
+
+
+.popup2 {
+  margin: 0px auto;
+  height: 270px;
+  width: 100%;
+background: #000000;
+position: absolute;
+top: 30px;
+right: 0px;
+border-radius: 0px 0px 5px 5px;
+}
+
+
+.popup {
+  margin: 100px auto;
+background: linear-gradient(to right, #151515 82%, #FF0000 18%);
+  border-radius: 5px;
+  width: 16%;
+  height: 300px;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.btj {
+  padding:25px;
+  background: #FFE800;
+  border-radius: 100%;
+  position: absolute;
+  top: 130px;
+  left: 15px;
+}
+
+.btg1 {
+  padding:16px;
+  background: #7A7A7A;
+  border-radius: 100%;
+  position: absolute;
+  top: 140px;
+  right: 60px;
+}
+
+.btg2 {
+  padding:16px;
+  background: #7A7A7A;
+  border-radius: 100%;
+  position: absolute;
+  top: 190px;
+  right: 80px;
+}
+
+
+
+/* SIDEBAR MODIFIER */
+ 	
+.sidenav .box1{
+  font-size: 18px;
+  display: block;
+background: #131313;
+border-bottom: 0.5px solid #454545;
+color: #fff;
+height: 50px;
+  padding: 10px 6px 6px 15%;
+}
+
+.sidenav {
+position: absolute;
+top: 56px;
+left: 0px;
+  height: 92.9%;
+  width: 200px;
+  z-index: 1;
+  background-color: #292929;
+  overflow-x: hidden;
+  padding-top: 0px;
+  border-right: 1px solid #000000;
+
+}
+
+.sidenav a {
+  padding: 6px 0px 6px 15%;
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  display: block;
+  border-bottom: 0.5px solid #454545;
+
+}
+
+.sidenav a:hover {
+  background-color: #6D6D6D;
+  color: white;
+  transition: 1.5s;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
